@@ -1,12 +1,10 @@
 package com.skylink.automation;
 
-import com.skylink.autoamtion.Calculator;
-import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
+
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
 
 @RunWith(JUnit4.class)
 public class NelsonsClassTest {
@@ -19,6 +17,10 @@ public class NelsonsClassTest {
 
     // String, int, float, doubles, boolean
     // read about arrays
+
+
+    // I want to see if all home screen buttons have correct text
+
 
     @Test
     public void testingAString(){
