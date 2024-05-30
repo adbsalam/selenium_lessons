@@ -105,5 +105,10 @@ public class NelsonsAssignmentTest {
  * You should run tests on sumbit form again - Test for each name in following data
  * "NameZero", "NameOne", "NameTwo", "NameThree", "NameFive", "NameSix"
  *
+ * Clean code
+ * - Meaningful names
+ * - Spaces - Indentations
+ * - Meaningful test functions
+ *
  * read more about : Java Records
  */
