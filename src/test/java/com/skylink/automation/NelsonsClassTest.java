@@ -6,6 +6,16 @@ import org.junit.runners.JUnit4;
 
 import static org.junit.Assert.assertEquals;
 
+/**
+ * Basic Understanding of JAVA - Done!!
+ * How to setup web driver - Done!! (Kingley, Wisdom, Emmanuel)
+ * How to use web driver to interact with browser/ website - Done!!
+ *
+ * Naming conventions: ** code styles **
+ * CUCUMBER -
+ */
+
+
 @RunWith(JUnit4.class)
 public class NelsonsClassTest {
 
@@ -20,8 +30,6 @@ public class NelsonsClassTest {
 
 
     // I want to see if all home screen buttons have correct text
-
-
     @Test
     public void testingAString(){
         String result = firstString + secondString + (firstNumber - secondNumber);
