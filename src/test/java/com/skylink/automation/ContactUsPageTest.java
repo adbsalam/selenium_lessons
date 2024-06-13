@@ -3,26 +3,11 @@ package com.skylink.automation;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
-import org.junit.Before;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
 import java.util.List;
 
-/**
- * Anything in RED means an error - code will not run
- * Yellow lines - which are the warnings - code will run bit its good to fix them
- * Green line - mean a typo or wrong spellings - code will run
- * <p>
- * Cannot resolve symbol 'Given'
- * <p>
- * We need to define cucumber options
- * These are to customise your cucumber testing
- * <p>
- * Reports will be generated in target folder
- * <p>
- * Data table -
- */
 @RunWith(JUnit4.class)
 public class ContactUsPageTest {
 
@@ -32,28 +17,37 @@ public class ContactUsPageTest {
     }
 
     /**
-     * String result = dataTable.cell(2,2);
-     * System.out.println("this is my cell value: " + result);
-     * get() means get me element at position X
-     * List<String> myRowNumberOne = dataTable.row(1);
-     * Practise
+     * For each only work for a collection of items
+     * for loop -  gives you more control
+     * practice while loop
+     * Counter - a variable to keep how many times loop have run
+     * Condition - how many times to run it -  when to stop - run until
+     * increment - step
+     * <p>
+     * <p>
+     * // immutable
+     * // cannot do record.get(0) instead do record[0]
+     * String[] record = {"personOne", "personOne@test.com", "test subject personOne", "Mentoring", "this message is for person one"};
+     * String name = record[0]; //personOne
      */
     @Then("Press submit button with following details")
     public void press_submit_button_with_following_details(DataTable dataTable) {
+        int height = dataTable.height();
 
-        /**
-         * Counter - a variable to keep how many times loop have run
-         * Condition - how many times to run it -  when to stop - run until
-         * increment - step
-         */
-
-        for(int counter = 0; counter < 8;  counter++){
-            System.out.println("counter value now is : " + counter);
-
+        for (int counter = 0; counter < height; counter++) {
             List<String> row = dataTable.row(counter);
+            String name = row.get(0);
+            String email = row.get(1);
+            String subject = row.get(2);
+            String option = row.get(3);
+            String message = row.get(4);
 
-            System.out.println("printing counter: " + row);
+            System.out.println("printing name: " + name);
+            System.out.println("printing email: " + email);
+            System.out.println("printing subject: " + subject);
+            System.out.println("printing option: " + option);
+            System.out.println("printing message: " + message);
+            System.out.println("--------------------------------");
         }
-
     }
 }
