@@ -12,9 +12,7 @@ import java.util.List;
 public class ContactUsPageTest {
 
     @Given("User can press submit button")
-    public void user_can_press_submit_button() {
-
-    }
+    public void user_can_press_submit_button() {}
 
     /**
      * For each only work for a collection of items
@@ -41,13 +39,11 @@ public class ContactUsPageTest {
             String subject = row.get(2);
             String option = row.get(3);
             String message = row.get(4);
-
             System.out.println("printing name: " + name);
             System.out.println("printing email: " + email);
             System.out.println("printing subject: " + subject);
             System.out.println("printing option: " + option);
             System.out.println("printing message: " + message);
-            System.out.println("--------------------------------");
         }
     }
 }
