@@ -15,7 +15,6 @@ import static org.junit.Assert.assertEquals;
  * CUCUMBER -
  */
 
-
 @RunWith(JUnit4.class)
 public class NelsonsClassTest {
 
@@ -27,8 +26,6 @@ public class NelsonsClassTest {
 
     // String, int, float, doubles, boolean
     // read about arrays
-
-
     // I want to see if all home screen buttons have correct text
     @Test
     public void testingAString(){
