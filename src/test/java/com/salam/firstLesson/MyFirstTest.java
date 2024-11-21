@@ -50,4 +50,3 @@ public class MyFirstTest {
         assertEquals(8, joshua);
     }
 }
-
