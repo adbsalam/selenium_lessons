@@ -23,6 +23,9 @@ public class MyChromeDriverTest {
      * xpath -> location of an item on the website/screen
      *
      * sleep will be in milli seconds which is 1s = 1000ms
+     *
+     * Try to complete login -
+     * verify that user can login after entering email and password
      */
     @Test
     public void myFirstClickTest() throws InterruptedException {
