@@ -6,10 +6,20 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import java.util.ArrayList;
+
 public class MyChromeDriverTest {
 
+    // initialisation -> new Something();
+    // -> ( Constructors - Java Objects - initialise a class) -> read about these
     ChromeDriver chromeDriver = new ChromeDriver();
 
+    /**
+     * Web drivers are tools that help you automate a browser
+     * chrome driver - chrome automation
+     * edge driver - edge automation
+     * firefox driver - firefox automation
+     */
     @Before
     public void setup() {
         System.setProperty("webdriver.chrome.driver", "/Users/muhammadabdulsalam/Dev/intelij/driver/chromedriver");
@@ -34,8 +44,6 @@ public class MyChromeDriverTest {
         continueButton.click();
 
         Thread.sleep(2000);
-
-
 
         WebElement emailText = chromeDriver.findElement(By.xpath("//*[@id=\"undefined-:r2:\"]"));
 
