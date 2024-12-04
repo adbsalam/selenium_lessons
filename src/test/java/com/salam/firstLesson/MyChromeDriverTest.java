@@ -1,6 +1,8 @@
 package com.salam.firstLesson;
 
 import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 /**
@@ -11,12 +13,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class MyChromeDriverTest {
 
     @Test
-    public void LaunchBrowser(){
-
+    public void setup() {
     }
 
     @Test
-    public void navigateToSomething(){
+    public void myTest() throws InterruptedException {
 
     }
 
